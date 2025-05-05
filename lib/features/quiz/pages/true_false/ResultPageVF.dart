@@ -74,8 +74,6 @@ class _ResultPageState extends State<ResultPage> {
     _resultWidgets = List.generate(widget.totalQuestions, (i) {
       final isCorrect =
           i < widget.isCorrectList.length ? widget.isCorrectList[i] : false;
-      final userAnswer =
-          i < widget.userAnswers.length ? widget.userAnswers[i] : false;
 
       return Container(
         width: double.infinity,
@@ -121,13 +119,7 @@ class _ResultPageState extends State<ResultPage> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      'Votre réponse: ${userAnswer ? 'Vrai' : 'Faux'}',
-                      style: TextStyle(
-                        color: Colors.grey[800],
-                        fontSize: 16,
-                      ),
-                    ),
+                  
                     const SizedBox(height: 4),
                     Text(
                       'Bonne réponse: ${widget.isCorrectList[i] ? 'Vrai' : 'Faux'}',
