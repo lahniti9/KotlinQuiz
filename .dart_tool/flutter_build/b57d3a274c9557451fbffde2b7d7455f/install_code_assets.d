@@ -1,0 +1,1 @@
+ /Users/mac/development/projects/KotlinQuizApp/.dart_tool/flutter_build/b57d3a274c9557451fbffde2b7d7455f/native_assets.json: 
